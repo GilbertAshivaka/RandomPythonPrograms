@@ -1,0 +1,143 @@
+#Searching for a prime number
+for n in range(2, 10):
+    for x in range(2, n):
+        if n % x == 0:
+            print(n, 'equals', x, '*', n//x)
+            break
+    else:
+        # loop fell through without finding a factor
+        print(n, 'is a prime number')
+
+
+
+
+
+def main():
+    x = get_num("Enter a number  ")
+    print(f"The number you entered is {x}.")
+
+
+def get_num(prompt):
+    while True:
+        try:
+            return int(input(prompt))
+        except ValueError:
+            pass
+        
+        
+main()
+
+
+
+#This program prompts to enter a number 5 times
+i=0
+num=1
+while i<5 and num>0:
+    num = eval(input("Enter a number  "))
+    i+=1
+print(num)
+
+
+#OR
+for i in range(5):
+    num = eval(input("Enter a number  "))
+    print(num)
+    if num<0:
+        break
+    
+
+#Another program to input temp in degrees and output it in farenheit
+temp= eval(input("Please enter the temperature in celcius "))
+while temp <-273.15:
+    temp = eval(input("That temperature is impossible! Please enter a valid value  "))
+f_temp = 9/5*temp+32
+print("In Farenheit that will be:", f_temp)
+
+if f_temp > 212: 
+    print("That temperature is above boiling point!")
+if f_temp < 32:
+    print("That temperature is below boiling point!") 
+
+
+#Another program to input temp in degrees and output it in farenheit
+temp= eval(input("Please enter the temperature in celcius "))
+
+f_temp = 9/5*temp+32
+
+print("In Farenheit that will be:", f_temp)
+
+if f_temp > 212: 
+    print("That temperature is above boiling point!")
+if f_temp < 32:
+    print("That temperature is below boiling point!") 
+#A program for a number guessing game
+guess= eval(input("Enter your guess  "))
+from random import randint
+num = randint(1,10)
+if num == guess:
+    print("You got it!")
+else:
+    print("Sorry, your guess is not right.")
+
+#The above program can be improved using a while loop as follows to prompt the user to re-enter guess until they get it right
+from random import randint
+sec_numb= randint(1,10)
+guess = 0
+while guess != sec_numb:
+    eval(input("Enter your guess  "))
+else:
+    print("You finally got it!")
+
+
+
+print("A modulus rectangle!")
+l = eval(input("How many numbers long do you want the rectanle to be?  "))
+w = eval(input("How many numbers wide?  ")) 
+
+
+for i in range(w):
+    print()
+    for j in range(l):
+        print((j%10)," ",end="")
+         
+
+print()
+
+sec = eval(input("Enter the seconds you want converted  "))
+m = sec//60
+s = sec%60
+
+print(f"That will be {m} minutes {s} seconds")
+
+
+
+
+
+from math import sin 
+from math import cos
+for i in range(0,345,15):
+    print(i,round(sin(i),4),round(cos(i),4),sep="---") 
+
+
+#Prints random numbers between 3 and 6 50 times
+for i in range(50):
+    from random import randint
+    r = randint(3,6)
+    print(r," ",sep=",",end="")
+print()
+
+#Exponential of random numbers
+from random import randint
+x = randint(1,50)
+y = randint(2,5)
+print(x**y)
+
+
+print(round(3.78777,2))
+
+#Prints my name(Gilbert) a random number of times
+from random import randint
+n = randint(1,10)
+for i in range(n):
+    print("Gilbert")
+

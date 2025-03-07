@@ -1,0 +1,40 @@
+name=input("What is your name?  ")  
+print(name)
+
+for i in range(4):
+    print("*"*6)
+
+for i in range(4):
+    print("*"*(i+1))
+
+x = (int(input("Enter the value of x  " )))
+print(x,(x*2),(x*3),(x*4),(x*5),sep="---")
+
+Bill = eval(input("Input the amount of bill in USD  "))
+Tip = eval(input("Enter Tip: as percentage of bill  "))
+Tip = (Tip/100)*Bill
+Total_Bill = Bill+Tip
+print("TIP", Tip, "USD") 
+print("TOTAL BILL", Total_Bill, "USD")
+
+#the foolowing code prints the total and average of three numbers 
+x= eval(input("Enter the value of x  "))
+y= eval(input("Enter the value of y  "))
+z= eval(input("Enter the value of z  "))
+
+average =(x+y+z)/3
+total = x+y+z
+
+print("Numbers enterd:",x,y,z)
+print("TOTAL",total)
+print("AVERAGE",average)
+
+for i in range (4):
+    num = eval(input("Enter a number  "))
+    print("The square of your number is,", num*num)
+print("The loop is now done!") 
+
+
+temp= eval(input("Please enter the temperature in celcius "))
+f_temp = 9/5*temp+32
+print("In Farenheit that will be:", f_temp)

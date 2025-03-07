@@ -1,0 +1,13 @@
+def main():
+    x = get_num
+    print(f"The number you entered is {x}.")
+
+
+def get_num():
+    while True:
+        try:
+            return int(input("Enter a number  "))
+        except ValueError:
+            print("Your input is not an integer.")
+        
+        
